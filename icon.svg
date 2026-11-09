@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Plugin Guardian">
+  <defs>
+    <linearGradient id="pgShield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d8bfd"/>
+      <stop offset="1" stop-color="#1b58c9"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#pgShield)" d="M32 4 8 13v19c0 14 10.4 24.6 24 28 13.6-3.4 24-14 24-28V13L32 4Z"/>
+  <path fill="#ffffff" d="M29.6 40.6 20 31l3.2-3.2 6.4 6.4 13-13L45.8 24.4 29.6 40.6Z"/>
+  <circle cx="32" cy="20" r="3.4" fill="#ffffff" opacity="0.55"/>
+</svg>

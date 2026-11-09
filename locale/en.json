@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plugin Guardian",
+    "description": "Watches every installed plugin, scores its runtime risk, and lets you contain it from one panel."
+  }
+}
