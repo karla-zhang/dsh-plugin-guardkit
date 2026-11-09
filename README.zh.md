@@ -54,7 +54,7 @@ Host 半边从 `pluginManager` 服务采集（`listPlugins`、`listBundles`、
 
 ```yaml
 - id: plugin-guardian
-  name: dsh-plugin-guardian
+  name: dsh-plugin-guardkit
   config:
     refreshMs: 12000   # 3000..120000
     audit: true        # 写入 snapshot.json / timeline.ndjson / route-hits.ndjson
@@ -76,14 +76,14 @@ Host 半边从 `pluginManager` 服务采集（`listPlugins`、`listBundles`、
 命令行（profile 名按实际填写，桌面端是 `desktop`）：
 
 ```sh
-dsh plugin --profile desktop add dsh-plugin-guardian          # 已发布到 npm
-dsh plugin --profile desktop add github:<owner>/dsh-plugin-guardian   # 直接从 GitHub 安装
+dsh plugin --profile desktop add dsh-plugin-guardkit          # 已发布到 npm
+dsh plugin --profile desktop add github:<owner>/dsh-plugin-guardkit   # 直接从 GitHub 安装
 dsh plugin --profile desktop add /path/to/plugin-guardian     # 本地目录
 ```
 
 装完需要重启 DSH，因为新增 bundle 会改变 Host 的启动图。
 
-卸载：`dsh plugin --profile desktop remove dsh-plugin-guardian`，或从 **设置 → 插件** 里移除。
+卸载：`dsh plugin --profile desktop remove dsh-plugin-guardkit`，或从 **设置 → 插件** 里移除。
 
 ## 说明
 

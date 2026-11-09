@@ -1,5 +1,5 @@
 {
-  "name": "dsh-plugin-guardian",
+  "name": "dsh-plugin-guardkit",
   "version": "0.1.0",
   "description": "Watches every installed plugin, scores its runtime risk, and lets you contain it from one panel.",
   "keywords": [

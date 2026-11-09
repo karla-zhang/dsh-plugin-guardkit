@@ -241,7 +241,7 @@ Behaviour:
 ## Hard constraints (from the DSH client plugin rules)
 
 * File is `client.js`, a plain script starting with
-  `window.__ModuleLoader__.load({ id: 'dsh-plugin-guardian', factory(require) { … } })`.
+  `window.__ModuleLoader__.load({ id: 'dsh-plugin-guardkit', factory(require) { … } })`.
   No `import`, no `export`, no JSX, no TypeScript, no Node built-ins, no bundler.
 * React comes from `require('react')`. Use `React.createElement` (alias `h`), `useState`, `useEffect`,
   `useMemo`, `useCallback`, `useRef`. No other module may be required.

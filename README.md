@@ -54,7 +54,7 @@ All keys are optional and live in the profile's Cordis patch row for `plugin-gua
 
 ```yaml
 - id: plugin-guardian
-  name: dsh-plugin-guardian
+  name: dsh-plugin-guardkit
   config:
     refreshMs: 12000   # 3000..120000
     audit: true        # write snapshot.json / timeline.ndjson / route-hits.ndjson
@@ -76,14 +76,14 @@ or install this directory and restart the app. From a terminal (use the real pro
 the desktop app's profile is `desktop`):
 
 ```sh
-dsh plugin --profile desktop add dsh-plugin-guardian              # from npm, once published
-dsh plugin --profile desktop add github:<owner>/dsh-plugin-guardian   # straight from GitHub
+dsh plugin --profile desktop add dsh-plugin-guardkit              # from npm, once published
+dsh plugin --profile desktop add github:<owner>/dsh-plugin-guardkit   # straight from GitHub
 dsh plugin --profile desktop add /path/to/plugin-guardian         # local directory
 ```
 
 Restart DSH afterwards: adding a bundle changes the Host boot graph.
 
-Uninstall with `dsh plugin --profile desktop remove dsh-plugin-guardian`, or from the same
+Uninstall with `dsh plugin --profile desktop remove dsh-plugin-guardkit`, or from the same
 **Settings → Plugins** page.
 
 ## Notes

@@ -3,7 +3,7 @@
  * Loaded as a plain browser script by window.__ModuleLoader__; React 18 via require('react').
  */
 window.__ModuleLoader__.load({
-  id: 'dsh-plugin-guardian',
+  id: 'dsh-plugin-guardkit',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
