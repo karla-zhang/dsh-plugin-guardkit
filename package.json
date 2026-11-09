@@ -32,7 +32,8 @@
     "README.md",
     "README.zh.md",
     "CONTRACT.md",
-    "LICENSE"
+    "LICENSE",
+    "market"
   ],
   "engines": {
     "node": ">=22"

@@ -1,0 +1,46 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Plugin Guardkit index",
+    "zh": "插件卫士索引"
+  },
+  "description": {
+    "en": "Self-hosted index for Plugin Guardkit: runtime monitoring, risk scoring and containment for installed plugins.",
+    "zh": "插件卫士的自建索引：已安装插件的运行监控、风险评分与一键隔离。"
+  },
+  "metadata": {
+    "categories": {
+      "security": {
+        "title": { "en": "Security & audit", "zh": "安全与审计" }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-guardkit",
+      "title": "dsh-plugin-guardkit",
+      "description": {
+        "en": "Watches every installed plugin, scores its runtime risk from fiber state, install scripts, overrides and version exemptions, and lets you contain any plugin or bundle from one panel.",
+        "zh": "监控每个已安装插件的运行状态，依据 fiber 状态、安装脚本、覆盖项与版本豁免给出风险评分，并支持在同一个面板里隔离任意插件或 bundle。"
+      },
+      "homepage": "https://www.npmjs.com/package/dsh-plugin-guardkit",
+      "repository": {
+        "url": "https://www.npmjs.com/package/dsh-plugin-guardkit"
+      },
+      "metadata": {
+        "category": "security",
+        "keywords": ["security", "monitor", "risk", "audit", "plugins"],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.1",
+          "publishTimestamp": 1794206400,
+          "source": { "type": "npm" },
+          "engines": { "node": ">=22" }
+        }
+      ]
+    }
+  ]
+}
