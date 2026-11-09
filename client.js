@@ -685,10 +685,21 @@ window.__ModuleLoader__.load({
     return {
       inject: ['slots'],
       apply(ctx) {
-        ctx.slots.inject('settings.plugins.tab', () => ctx.slots.register(
-          { name: 'settings.plugins.tab', id: 'guardian', order: 40, label: () => tabLabel() },
-          GuardianPanel,
-        ));
+        // Two seats, because builds differ: the Plugins settings section and the
+        // standalone Plugins page tab row. A seat this build does not declare must
+        // never take the other one down.
+        const mount = (slotName) => {
+          try {
+            ctx.slots.inject(slotName, () => ctx.slots.register(
+              { name: slotName, id: 'guardian', order: 40, label: () => tabLabel() },
+              GuardianPanel,
+            ));
+          } catch (error) {
+            console.warn('[plugin-guardkit] slot "' + slotName + '" mount failed', error);
+          }
+        };
+        mount('settings.plugins.tab');
+        mount('plugins.tab');
       },
     };
   },
