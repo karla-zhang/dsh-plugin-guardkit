@@ -1,7 +1,9 @@
 # Plugin Guardian · 插件卫士
 
+npm: https://www.npmjs.com/package/dsh-plugin-guardkit · source: https://github.com/karla-zhang/dsh-plugin-guardkit
+
 Watches every plugin installed in this DeepSeek Harness profile, scores its runtime
-risk, and lets you contain it from one panel inside **Settings → Plugins → 插件卫士**.
+risk, and lets you contain it from one panel inside **Plugins → 监控**.
 
 Built for the question "what is this third-party plugin actually doing?" — the panel is
 driven by the Host's live Cordis topology, not by a static list scraped at build time.
@@ -41,8 +43,10 @@ snapshot on same-origin routes:
 - `GET  /plugin-guardian/api/snapshot`
 - `POST /plugin-guardian/api/action` — `{ action, entryId?, name? }`
 
-The browser half is a React component registered into the `settings.plugins.tab` slot: it
-polls the snapshot, renders everything with `--dsw-alias-*` theme tokens, and posts actions.
+The browser half is a React component registered into the Plugins page tab row
+(`plugins.tab`) and, where that page exists, the Settings → Plugins tab row
+(`settings.plugins.tab`): it polls the snapshot, renders everything with
+`--dsw-alias-*` theme tokens, and posts actions.
 All copy is owned by the client (zh/en), so the panel follows the UI language.
 
 Route safety: responses are `no-store`; cross-site requests are rejected by comparing the
@@ -76,9 +80,9 @@ or install this directory and restart the app. From a terminal (use the real pro
 the desktop app's profile is `desktop`):
 
 ```sh
-dsh plugin --profile desktop add dsh-plugin-guardkit              # from npm, once published
-dsh plugin --profile desktop add github:<owner>/dsh-plugin-guardkit   # straight from GitHub
-dsh plugin --profile desktop add /path/to/plugin-guardian         # local directory
+dsh plugin --profile desktop add dsh-plugin-guardkit                       # from npm
+dsh plugin --profile desktop add github:karla-zhang/dsh-plugin-guardkit   # straight from GitHub
+dsh plugin --profile desktop add /path/to/plugin-guardian                 # local directory
 ```
 
 Restart DSH afterwards: adding a bundle changes the Host boot graph.

@@ -2,8 +2,10 @@
 
 [English](README.md) | 中文
 
+npm: https://www.npmjs.com/package/dsh-plugin-guardkit · 源码: https://github.com/karla-zhang/dsh-plugin-guardkit
+
 监控当前 DeepSeek Harness 配置文件里安装的每一个插件，为它们的运行时状态打分，并在
-**设置 → 插件 → 插件卫士** 这一个标签页里完成查看与隔离。
+**插件 → 监控** 这一个标签页里完成查看与隔离。
 
 它要回答的是那个最实际的问题——「这个第三方插件到底在干什么？」。面板数据全部来自 Host 端
 Cordis 运行时的实时拓扑，而不是构建期抓取的静态清单。
@@ -41,7 +43,8 @@ Host 半边从 `pluginManager` 服务采集（`listPlugins`、`listBundles`、
 - `GET  /plugin-guardian/api/snapshot`
 - `POST /plugin-guardian/api/action` —— `{ action, entryId?, name? }`
 
-浏览器半边是一个注册进 `settings.plugins.tab` 插槽的 React 组件：轮询快照、只用
+浏览器半边是一个 React 组件，注册进插件页顶部标签栏（`plugins.tab`），若该版本还保留设置里的
+插件分区则同时挂到 `settings.plugins.tab`：轮询快照、只用
 `--dsw-alias-*` 主题变量渲染、通过 POST 发起操作。所有文案由前端自己维护（中/英），因此面板
 跟随界面语言。
 
@@ -76,8 +79,8 @@ Host 半边从 `pluginManager` 服务采集（`listPlugins`、`listBundles`、
 命令行（profile 名按实际填写，桌面端是 `desktop`）：
 
 ```sh
-dsh plugin --profile desktop add dsh-plugin-guardkit          # 已发布到 npm
-dsh plugin --profile desktop add github:<owner>/dsh-plugin-guardkit   # 直接从 GitHub 安装
+dsh plugin --profile desktop add dsh-plugin-guardkit                      # 已发布到 npm
+dsh plugin --profile desktop add github:karla-zhang/dsh-plugin-guardkit   # 直接从 GitHub 安装
 dsh plugin --profile desktop add /path/to/plugin-guardian     # 本地目录
 ```
 
