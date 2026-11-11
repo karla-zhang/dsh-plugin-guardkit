@@ -47,5 +47,14 @@
       "immediately": true,
       "inject": []
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karla-zhang/dsh-plugin-guardkit.git"
+  },
+  "homepage": "https://github.com/karla-zhang/dsh-plugin-guardkit",
+  "bugs": {
+    "url": "https://github.com/karla-zhang/dsh-plugin-guardkit/issues"
+  },
+  "author": "karla-zhang"
 }

@@ -44,13 +44,13 @@ npm pack    # 产出 dsh-plugin-guardkit-0.1.1.tgz
 1. 新建仓库（公开），push 已有提交：
    ```powershell
    cd D:\BaiduSyncdisk\deepseek-harness\plugin-guardian
-   git remote add origin https://github.com/<owner>/dsh-plugin-guardkit.git
+   git remote add origin https://github.com/karla-zhang/dsh-plugin-guardkit.git
    git push -u origin main
    ```
 2. 仓库加 topic `dsh-plugin`，等仓库存在满 1 天（硬性规则）。
 3. 先 `npm publish`（目录条目的 `versions[].source` 是 npm）。
 4. Fork `awesome-dsh-plugin/awesome-dsh-plugin`，按模板新增
-   `data/plugins/<owner>__dsh-plugin-guardkit.yml`（模板见 `market/awesome-dsh-plugin.yml`），提 PR。
+   `data/plugins/karla-zhang__dsh-plugin-guardkit.yml`（模板见 `market/awesome-dsh-plugin.yml`），提 PR。
    README 是生成的，不要改。
 
 审核通过后，插件会出现在市场搜索里，用户点一下就装。

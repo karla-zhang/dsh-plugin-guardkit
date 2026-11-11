@@ -1,8 +1,8 @@
 # Template for the curated registry (awesome-dsh-plugin/awesome-dsh-plugin).
 # Save as: data/plugins/<owner>__dsh-plugin-guardkit.yml
 # Filled in only after the repository exists on GitHub (>= 1 day old, topic dsh-plugin).
-url: https://github.com/OWNER/dsh-plugin-guardkit
-name: OWNER/dsh-plugin-guardkit
+url: https://github.com/karla-zhang/dsh-plugin-guardkit
+name: karla-zhang/dsh-plugin-guardkit
 category: security
 description:
   en: Runtime monitor for installed plugins: shows each plugin's fiber state, scores risk from install scripts, overrides and version exemptions, and can contain a plugin or bundle.

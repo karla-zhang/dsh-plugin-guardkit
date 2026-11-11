@@ -11,7 +11,10 @@
   "metadata": {
     "categories": {
       "security": {
-        "title": { "en": "Security & audit", "zh": "安全与审计" }
+        "title": {
+          "en": "Security & audit",
+          "zh": "安全与审计"
+        }
       }
     }
   },
@@ -23,13 +26,19 @@
         "en": "Watches every installed plugin, scores its runtime risk from fiber state, install scripts, overrides and version exemptions, and lets you contain any plugin or bundle from one panel.",
         "zh": "监控每个已安装插件的运行状态，依据 fiber 状态、安装脚本、覆盖项与版本豁免给出风险评分，并支持在同一个面板里隔离任意插件或 bundle。"
       },
-      "homepage": "https://www.npmjs.com/package/dsh-plugin-guardkit",
+      "homepage": "https://github.com/karla-zhang/dsh-plugin-guardkit",
       "repository": {
-        "url": "https://www.npmjs.com/package/dsh-plugin-guardkit"
+        "url": "https://github.com/karla-zhang/dsh-plugin-guardkit"
       },
       "metadata": {
         "category": "security",
-        "keywords": ["security", "monitor", "risk", "audit", "plugins"],
+        "keywords": [
+          "security",
+          "monitor",
+          "risk",
+          "audit",
+          "plugins"
+        ],
         "labels": [],
         "sortKeys": {}
       },
@@ -37,8 +46,12 @@
         {
           "version": "0.1.1",
           "publishTimestamp": 1794206400,
-          "source": { "type": "npm" },
-          "engines": { "node": ">=22" }
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "node": ">=22"
+          }
         }
       ]
     }
